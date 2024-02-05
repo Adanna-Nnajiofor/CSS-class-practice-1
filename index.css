@@ -1,0 +1,90 @@
+.container {
+  width: 30%;
+  height: 85vh;
+  background-color: #c4e5e6;
+  padding: 15px 15px;
+}
+
+#img {
+  display: block;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 10px;
+  color: rgb(32, 133, 176);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header span {
+  color: black !important;
+}
+
+#building {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 450px;
+  height: 350px;
+  
+  
+}
+
+.inside {
+  text-align: center;
+  background-color: rgb(32, 133, 176);
+  width: 180px;
+  height: 20px;
+  padding: 10px;
+  margin: -10px;
+  position: relative;
+  z-index: 1;
+  bottom: 15px;
+  right: 6px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+color: white;
+}
+
+.line-container {
+  position: relative;
+  display: inline-block;
+}
+
+.line-container::before,
+.line-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 28%; /* Adjust the width of the lines as needed */
+  height: 1px;
+  background-color: black; /* Adjust the color of the lines */
+}
+
+.line-container::before {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.line-container::after {
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.sub-header {
+  text-align: center;
+  font-weight: lighter;
+  padding: 5px 130px; /* Adjust padding as needed */
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+ul.list {
+  list-style-type: disc;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding:0px 20px; margin:5px; font-size: 15px; line-height: 20px;
+}
